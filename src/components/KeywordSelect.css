@@ -1,0 +1,124 @@
+.kw-page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.kw-header {
+  padding: 24px 0 0;
+  text-align: center;
+}
+
+.kw-logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+}
+
+.kw-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0 56px;
+  gap: 28px;
+}
+
+.kw-intro {
+  text-align: center;
+}
+
+.kw-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0 0 10px;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+.kw-desc {
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.kw-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.kw-chip {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 15px;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.kw-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.kw-chip--active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.kw-chip--active:hover {
+  opacity: 0.85;
+  color: #fff;
+}
+
+.kw-hint {
+  text-align: center;
+  font-size: 13px;
+  color: var(--text);
+  margin: -12px 0 -4px;
+  min-height: 1.2em;
+}
+
+.kw-submit {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--sans);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.kw-submit:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.kw-submit:not(:disabled):hover {
+  opacity: 0.88;
+}
+
+.kw-submit:not(:disabled):active {
+  opacity: 0.72;
+}

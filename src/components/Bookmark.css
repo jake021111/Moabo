@@ -1,0 +1,138 @@
+.bm-page {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 24px 56px;
+  box-sizing: border-box;
+}
+
+/* ── Header ── */
+.bm-header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 0 14px;
+}
+
+.bm-back {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 14px;
+  font-family: var(--sans);
+  cursor: pointer;
+  padding: 6px 0;
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 0.15s;
+}
+
+.bm-back:hover {
+  color: var(--text-h);
+}
+
+.bm-logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.bm-header-end {
+  /* spacer to keep logo centered */
+}
+
+/* ── Page title ── */
+.bm-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -0.5px;
+  margin: 0 0 24px;
+}
+
+.bm-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  padding: 0 5px;
+}
+
+/* ── Empty state ── */
+.bm-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.bm-empty-icon {
+  font-size: 52px;
+  line-height: 1;
+  color: var(--border);
+}
+
+.bm-empty-text {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.bm-empty-sub {
+  font-size: 14px;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ── Main content ── */
+.bm-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* ── Category section ── */
+.bm-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bm-cat-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0;
+  letter-spacing: -0.3px;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid var(--border);
+}
+
+/* ── Cards ── */
+.bm-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
